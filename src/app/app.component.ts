@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'animation-angular';
+  @HostBinding('@.disabled')
+  public animationsDisabled = false;
+
+  toggleAnimations() {
+    this.animationsDisabled = !this.animationsDisabled;
+  }
 }

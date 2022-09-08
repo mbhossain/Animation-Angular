@@ -1,4 +1,7 @@
 <nav class="row">
+  <input type="checkbox" id="animation-toggle" [checked]="!animationsDisabled" (click)="toggleAnimations()">
+  <label for="animation-toggle" [style.color]="animationsDisabled? 'red' : 'green'">{{ animationsDisabled ? 'Deactive
+    Animations' : 'Active Animations' }}</label>
   <button routerLink="open-close" routerLinkActive="active" class="button" role="button">Open_Close</button>
 </nav>
 <router-outlet></router-outlet>
