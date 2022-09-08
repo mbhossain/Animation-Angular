@@ -1,0 +1,9 @@
+<div class="center">
+    <nav>
+        <button type="button" (click)="toggle()">{{status == 'active' ? 'Inactive' : 'Active'}}</button>
+    </nav>
+
+    <div [@slideStatus]="status" class="box">
+        {{ status == 'active' ? 'Active' : 'Inactive' }}
+    </div>
+</div>

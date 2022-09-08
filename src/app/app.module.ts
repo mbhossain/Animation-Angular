@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OpenCloseComponent } from './components/open-close/open-close.component';
 import { HomeComponent } from './components/home/home.component';
+import { StatusSliderComponent } from './status-slider/status-slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OpenCloseComponent,
-    HomeComponent
+    HomeComponent,
+    StatusSliderComponent
   ],
   imports: [
     BrowserModule
