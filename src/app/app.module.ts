@@ -5,11 +5,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OpenCloseComponent } from './components/open-close/open-close.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OpenCloseComponent
+    OpenCloseComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule

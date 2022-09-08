@@ -1,37 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 
 .button {
-    background-color: #13aa52;
-    border: 1px solid #13aa52;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, black 0, #17a2b8 100%);
+    border: 0;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    outline: none;
-    outline: 0;
-    padding: 10px 25px;
-    text-align: center;
-    transform: translateY(0);
-    transition: transform 150ms, box-shadow 150ms;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    margin-left: 12px;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.button:focus {
+    box-shadow: coral 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #2b6c6c 0 -3px 0 inset;
 }
 
 .button:hover {
-    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
-    transform: translateY(-2px);
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #2b6c6c 0 -3px 0 inset;
+    transform: translateY(-3px);
 }
 
-@media (min-width: 768px) {
-    .button {
-        padding: 8px 25px;
-    }
+.button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
 }
 
 .center {
