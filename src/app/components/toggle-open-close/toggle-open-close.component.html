@@ -1,0 +1,9 @@
+<nav>
+    <button type="button" class="button-inline" (click)="toggleAnimations()">{{ toggleMode }}</button>
+    <button type="button" class="button-inline" (click)="toggle()">{{ isOpen ? 'Closed' : 'Open' }}</button>
+</nav>
+<div [@.disabled]="isDisabled">
+    <div [@childAnimation]="isOpen ? 'open' : 'closed'" class="open-close-container">
+        <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+    </div>
+</div>
