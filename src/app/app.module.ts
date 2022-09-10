@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { StatusSliderComponent } from './components/status-slider/status-slider.component';
 import { ToggleAnimationComponent } from './components/toggle-animation/toggle-animation.component';
 import { ToggleOpenCloseComponent } from './components/toggle-open-close/toggle-open-close.component';
+import { EnterLeaveListComponent } from './components/enter-leave-list/enter-leave-list.component';
+import { EnterLeaveListShowComponent } from './components/enter-leave-list-show/enter-leave-list-show.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ToggleOpenCloseComponent } from './components/toggle-open-close/toggle-
     HomeComponent,
     StatusSliderComponent,
     ToggleAnimationComponent,
-    ToggleOpenCloseComponent
+    ToggleOpenCloseComponent,
+    EnterLeaveListComponent,
+    EnterLeaveListShowComponent
   ],
   imports: [
     BrowserModule
