@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { OpenCloseComponent } from './components/open-close/open-close.component';
-import { StatusSliderComponent } from './status-slider/status-slider.component';
+import { StatusSliderComponent } from './components/status-slider/status-slider.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
