@@ -134,3 +134,11 @@ input {
     font-size: 100%;
     margin-bottom: 1rem;
 }
+
+.inline-level {
+    display: inline;
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: 700;
+
+}

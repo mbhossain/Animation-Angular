@@ -1,0 +1,15 @@
+<div class="center">
+    <h2>Filter</h2>
+    <label class="inline-level" for="search">Search</label>
+    <input type="text" id="search" class="d-inline" #criteria (input)="updateCriteria(criteria.value)"
+        placeholder="Search">
+
+    <ul class="heroes" [@filterAnimation]="heroesTotal">
+        <li *ngFor="let hero of heroes" class="hero">
+            <div class="inner">
+                <span class="badge">{{ hero.id }}</span>
+                <span class="name">{{ hero.name }}</span>
+            </div>
+        </li>
+    </ul>
+</div>
