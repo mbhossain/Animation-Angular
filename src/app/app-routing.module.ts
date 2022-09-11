@@ -13,7 +13,7 @@ import { StatusSliderComponent } from './components/status-slider/status-slider.
 import { ToggleAnimationComponent } from './components/toggle-animation/toggle-animation.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/filter', pathMatch: 'full' },
   { path: 'open-close', component: OpenCloseComponent, data: { animation: 'openClosePage' } },
   { path: 'home', component: HomeComponent, data: { animation: 'HomePage' } },
   { path: 'status', component: StatusSliderComponent, data: { animation: 'statusPage' } },

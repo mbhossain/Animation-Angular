@@ -1,6 +1,6 @@
 <div class="center">
     <nav>
-        <button type="button" (click)="toggle()">{{this.isShown? 'Insert':'Remove'}}</button>
+        <button type="button" (click)="toggle()">{{this.isShown? 'Remove':'Insert'}}</button>
     </nav>
 
     <div @myInsertRemoveTrigger *ngIf="isShown" class="insert-remove-container">
