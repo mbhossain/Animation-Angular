@@ -17,6 +17,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { GroupComponent } from './components/group/group.component';
 import { GroupListComponent } from './components/group-list/group-list.component';
 import { InsertRemoveComponent } from './components/insert-remove/insert-remove.component';
+import { QueryComponent } from './components/query/query.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InsertRemoveComponent } from './components/insert-remove/insert-remove.
     FilterComponent,
     GroupComponent,
     GroupListComponent,
-    InsertRemoveComponent
+    InsertRemoveComponent,
+    QueryComponent
   ],
   imports: [
     BrowserModule

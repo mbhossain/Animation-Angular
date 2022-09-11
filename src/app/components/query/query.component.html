@@ -1,0 +1,15 @@
+<div class="center">
+    <nav>
+        <button class="toggle" style="margin-bottom: 10px;" (click)="show = !show"
+            [disabled]="toggleDisabled">{{ show ? 'Close' : 'View' }}</button>
+    </nav>
+    <section *ngIf="show" @query (@query.start)="toggleDisabled = true" (@query.done)="toggleDisabled = false">
+        <p>I am a simple child element</p>
+        <p *ngIf="show">I am a child element that enters and leaves with its parent</p>
+        <p @animateMe>I am a child element with an animation trigger</p>
+        <div class="hero">
+            <span class="badge">{{ hero.id }}</span>
+            <span class="name">{{ hero.name }} <small>(heroes are always animated!)</small></span>
+        </div>
+    </section>
+</div>

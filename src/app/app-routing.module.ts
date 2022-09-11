@@ -8,6 +8,7 @@ import { GroupComponent } from './components/group/group.component';
 import { HomeComponent } from './components/home/home.component';
 import { InsertRemoveComponent } from './components/insert-remove/insert-remove.component';
 import { OpenCloseComponent } from './components/open-close/open-close.component';
+import { QueryComponent } from './components/query/query.component';
 import { StatusSliderComponent } from './components/status-slider/status-slider.component';
 import { ToggleAnimationComponent } from './components/toggle-animation/toggle-animation.component';
 
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'auto-calculation', component: AutoCalculationComponent, data: { animation: 'autoPage' } },
   { path: 'filter', component: FilterComponent, data: { animation: 'filterPage' } },
   { path: 'group', component: GroupComponent, data: { animation: 'heroGroupPage' } },
-  { path: 'insert-remove', component: InsertRemoveComponent, data: { animation: 'insertRemovePage' } }
+  { path: 'insert-remove', component: InsertRemoveComponent, data: { animation: 'insertRemovePage' } },
+  { path: 'query', component: QueryComponent, data: { animation: 'queryingPage' } }
 ];
 
 @NgModule({
