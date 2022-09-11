@@ -2,13 +2,14 @@
   <input type="checkbox" id="animation-toggle" [checked]="!animationsDisabled" (click)="toggleAnimations()">
   <label for="animation-toggle" [style.color]="animationsDisabled? 'red' : 'green'">{{ animationsDisabled ? 'Deactive Animations' : 'Active Animations' }} </label>
   <button routerLink="home" routerLinkActive="active" class="button" role="button">Home</button>
-  <button routerLink="open-close" routerLinkActive="active" class="button" role="button">Open-Close</button>
+  <button routerLink="open-close" routerLinkActive="active" class="button" role="button">Open Close</button>
   <button routerLink="status" routerLinkActive="active" class="button" role="button">Status Slider</button>
   <button routerLink="toggle" routerLinkActive="active" class="button" role="button">Toggle Animation</button>
   <button routerLink="enter-leave" routerLinkActive="active" class="button" role="button">Enter Leave</button>
   <button routerLink="auto-calculation" routerLinkActive="active" class="button" role="button">Auto Calculation</button>
   <button routerLink="filter" routerLinkActive="active" class="button" role="button">Filter</button>
   <button routerLink="group" routerLinkActive="active" class="button" role="button">Groups</button>
+  <button routerLink="insert-remove" routerLinkActive="active" class="button" role="button">Insert Remove</button>
 </nav>
 
 <div [@routeAnimations]="getRouteAnimationData()">

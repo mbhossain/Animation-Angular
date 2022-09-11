@@ -16,6 +16,7 @@ import { AutoCalculationListComponent } from './components/auto-calculation-list
 import { FilterComponent } from './components/filter/filter.component';
 import { GroupComponent } from './components/group/group.component';
 import { GroupListComponent } from './components/group-list/group-list.component';
+import { InsertRemoveComponent } from './components/insert-remove/insert-remove.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { GroupListComponent } from './components/group-list/group-list.component
     AutoCalculationListComponent,
     FilterComponent,
     GroupComponent,
-    GroupListComponent
+    GroupListComponent,
+    InsertRemoveComponent
   ],
   imports: [
     BrowserModule
