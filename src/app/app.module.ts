@@ -14,6 +14,8 @@ import { EnterLeaveListShowComponent } from './components/enter-leave-list-show/
 import { AutoCalculationComponent } from './components/auto-calculation/auto-calculation.component';
 import { AutoCalculationListComponent } from './components/auto-calculation-list/auto-calculation-list.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { GroupComponent } from './components/group/group.component';
+import { GroupListComponent } from './components/group-list/group-list.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FilterComponent } from './components/filter/filter.component';
     EnterLeaveListShowComponent,
     AutoCalculationComponent,
     AutoCalculationListComponent,
-    FilterComponent
+    FilterComponent,
+    GroupComponent,
+    GroupListComponent
   ],
   imports: [
     BrowserModule
