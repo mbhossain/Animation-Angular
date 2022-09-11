@@ -11,6 +11,8 @@ import { ToggleAnimationComponent } from './components/toggle-animation/toggle-a
 import { ToggleOpenCloseComponent } from './components/toggle-open-close/toggle-open-close.component';
 import { EnterLeaveListComponent } from './components/enter-leave-list/enter-leave-list.component';
 import { EnterLeaveListShowComponent } from './components/enter-leave-list-show/enter-leave-list-show.component';
+import { AutoCalculationComponent } from './components/auto-calculation/auto-calculation.component';
+import { AutoCalculationListComponent } from './components/auto-calculation-list/auto-calculation-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EnterLeaveListShowComponent } from './components/enter-leave-list-show/
     ToggleAnimationComponent,
     ToggleOpenCloseComponent,
     EnterLeaveListComponent,
-    EnterLeaveListShowComponent
+    EnterLeaveListShowComponent,
+    AutoCalculationComponent,
+    AutoCalculationListComponent
   ],
   imports: [
     BrowserModule
